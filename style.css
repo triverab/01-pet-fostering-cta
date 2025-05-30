@@ -1,0 +1,111 @@
+/* Use a modern, easy-to-read font */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Simple header for the site name */
+.site-header {
+  background-color: #1e3d59;
+  color: #fff;
+  text-align: center;
+  padding: 60px 0 20px 0;
+  margin-bottom: 0;
+}
+
+.site-header h2 {
+  margin: 0;
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+
+/* CTA section styles */
+.cta-banner {
+  background: #1e90a3 url('img/cta-bg.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 80px;
+  min-height: 400px;
+  position: relative;
+}
+
+.cta-banner::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(30, 144, 163, 0.5);
+  pointer-events: none;
+}
+
+.cta-banner h1,
+.cta-banner p,
+.cta-banner .cta-button {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-banner h1 {
+  font-size: 2.5em;
+  margin: 0 0 35px 0;
+}
+
+.cta-banner p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  background: #2ed8c3;
+  color: #1e3d59;
+  text-decoration: none;
+  padding: 15px 35px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-button:hover {
+  background: #23b6a0;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Info section below the banner */
+.info-section {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #f6fcfd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+}
+
+/* Image and text side by side using basic properties */
+.info-image {
+  width: 45%;
+  max-width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  margin-right: 30px;
+}
+
+.info-text {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 0;
+  text-align: left;
+}
+
+/* Heading for info section */
+.info-text h3 {
+  color: #1e3d59;
+  margin-top: 0;
+}
